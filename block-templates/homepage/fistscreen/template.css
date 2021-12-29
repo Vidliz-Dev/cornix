@@ -1,0 +1,20 @@
+.homepage-firstscreen {
+  padding: 6rem 0;
+}
+
+.homepage-firstscreen .block__header {
+  margin-bottom: 1.875rem;
+}
+
+.homepage-firstscreen .block__subtitle {
+  margin-bottom: 1.875rem;
+}
+
+.homepage-firstscreen .block__inner {
+  margin-bottom: 1.875rem;
+}
+
+.homepage-firstscreen .block__image-wrap img {
+  width: 100%;
+  height: auto;
+}

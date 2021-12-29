@@ -1,0 +1,26 @@
+@import '../../../scss/_variables';
+@import '../../../vendor/bootstrap/scss/mixins/breakpoints';
+
+
+.homepage-firstscreen {
+    padding: $section-padding-y*2 0;
+    .block {     
+
+        &__header {         
+            margin-bottom: 1.875rem;
+        }
+        &__subtitle {
+            margin-bottom: 1.875rem;
+        }
+        &__inner {
+            margin-bottom: 1.875rem;
+        }
+        &__button {}
+        &__image-wrap {
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }    
+}
