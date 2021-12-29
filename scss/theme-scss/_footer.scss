@@ -1,0 +1,170 @@
+.footer {
+	background: $primary;
+
+	&__menu-row {
+		padding: 4rem 1rem 0;
+		border-bottom: 1px solid $gray-1;
+	}
+
+	&__menu {
+		margin-bottom: 3rem;
+	}
+
+	&__menu-title {
+		font-size: 1.063rem;
+		color: $white;
+	}
+
+	&__info-row {
+		padding: 3rem 0;
+	}
+
+	&__brand {
+		display: flex;
+		align-items: center;
+		margin-bottom: 2rem;
+	}
+
+	&__logo {
+		margin-bottom: 0.375rem;
+		margin-right: 1rem;
+	}
+
+	&__email {
+		font-size: 1rem;
+		color: $footer-link;
+		font-weight: 400;
+	}
+
+	&__copyright {
+		font-size: 1rem;
+		color: $footer-copyright;
+		font-weight: 400;
+	}
+
+	&__social {
+		display: flex;
+		align-items: center;
+		margin-bottom: 2rem;
+		margin-left: auto;
+    	width: fit-content;
+		@include media-breakpoint-down(sm){
+			margin-left: 0;
+			width: auto;
+		}
+	}
+
+	&__social-link {
+		margin-right: 2rem;
+		color: $white;
+		font-size: 120%;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	&__links {
+		display: flex;
+		align-items: center;
+		margin-left: auto;
+    	width: fit-content;
+		@include media-breakpoint-down(sm){
+			margin-left: 0;
+			width: auto;
+		}
+	}
+
+	&__link {
+		margin-right: 2rem;
+		color: $footer-link;
+		text-decoration: underline;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	&__btn-open-acc{
+		width: fit-content;
+    	margin-bottom: 1.5rem;
+    	padding: 0.75rem 1.5rem;
+	}
+
+	&__app-links.app-links {
+		display: flex;
+		justify-content: flex-start;
+		flex-wrap: nowrap;
+		align-items:center;
+		@include media-breakpoint-only(lg){
+			justify-content: space-between;
+		}
+		.app-links{
+			&__col {
+				padding-top: 1rem;            
+				padding-bottom: 1rem;  
+				display: flex;                 
+				flex-direction: column;
+			}
+			&__devider {
+				margin-right: 1.625rem;
+				margin-left: 1.625rem;
+				height: 100%;
+				width: 1px;
+				display: block;
+				background: $gray-1;
+			}
+	
+			&__button {
+				&:nth-of-type(1) {
+					margin-bottom: 1rem;
+				}
+			}
+		}
+	}
+	
+
+	.nav {
+		flex-direction: column;
+	}
+
+	.nav-link {
+		font-size: 0.813rem;
+		font-weight: 400;
+		padding: 0.5rem 0;
+		color: $footer-link;
+	}
+}
+
+.footer-messege {
+	background: #7862E2;
+	padding: 9px 0;
+
+
+
+	&__box {
+		display: flex;
+		justify-content: center;
+		position: relative;
+	}
+
+	&__closed {
+		cursor: pointer;
+		position: absolute;
+		right: 0;
+		padding-right: 0 !important;
+	}
+
+	p {
+		margin-bottom: 0;
+		padding-right: 20px;
+		color: $white;
+	}
+
+} 
+
+.footer-messege.is-closed {
+	padding: 0;
+	opacity: 0;
+	transition: all 1s ease;
+}
