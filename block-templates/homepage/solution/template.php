@@ -19,11 +19,16 @@
 
 
 
-<section class=" block">    
+<section class="solution block">    
     <div class="container">
         <div class="row">
-
-
+            <div class="col-12">
+                <div class="section-header what-is__header">
+                    <h1 class="section-header__header text-center"><?php echo $title; ?></h1>
+                    <p class="section-header__text text-center"><?php echo $subtitle; ?></p>
+                </div> 
+            </div>
+            <?php echo $inner; ?>
         </div>
     </div>
 </section>
