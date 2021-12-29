@@ -3,24 +3,5 @@
 
 
 .homepage-firstscreen {
-    padding: $section-padding-y*2 0;
-    .block {     
-
-        &__header {         
-           padding-bottom: 1.875rem;
-        }
-        &__subtitle {
-            margin-bottom: 1.875rem;
-        }
-        &__inner {
-            margin-bottom: 1.875rem;
-        }
-        &__button {}
-        &__image-wrap {
-            img {
-                width: 100%;
-                height: auto;
-            }
-        }
-    }    
+    padding: $section-padding-y*2 0;    
 }
