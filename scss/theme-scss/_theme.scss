@@ -43,6 +43,11 @@ img {
 	height: auto;
 }
 
+.attachment-full.size-full {
+	width: 100%;
+	height: auto;
+}
+
 .swiper {
 	img {
 		width: 100%;
@@ -146,9 +151,9 @@ section {
   padding-bottom: 2rem;
   //text-transform: capitalize;
   &__header {
-    font-size: 3.125rem;
+    font-size: $h2-font-size;
     line-height: 1.25;
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 0;
     padding-bottom: 0.5rem;
     //text-transform: capitalize;
@@ -157,7 +162,7 @@ section {
 	}
   }
   &__text {    
-    font-size: 1.25rem;
+    font-size: 1.563rem;
     font-weight: 500;
     margin-bottom: 0;
     margin-top: 1.25rem;

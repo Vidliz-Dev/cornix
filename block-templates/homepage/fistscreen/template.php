@@ -26,18 +26,21 @@
     <div class="container">
         <div class="row">
            
-            <div class="col-12 col-md-6">
-                <h1 class="block__title"><?php echo $title; ?></h1>
-                <p class="block__subtitle"><?php echo $subtitle; ?></p>
+            <div class="col-12 col-md-6 order-2 order-md-1">
+                <div class="section-header block__header">
+                    <h1 class="section-header__header"><?php echo $title; ?></h1>
+                    <p class="section-header__text"><?php echo $subtitle; ?></p>
+                </div>                
+               
                 <div class="block__inner">
                     <?php echo $inner; ?>
                 </div>
                 <a href="<?php echo $button_link; ?>" class="btn btn-primary block__button"><?php echo $button_text; ?></a>
             </div>
 
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-6 order-1 order-md-2 mb-5 mb-md-0">
                 <div class="block__image-wrap">
-                    <img src="<?php echo $image; ?>" alt="" class="block__image">
+                    <?php echo wp_get_attachment_image($image, 'full'); ?>                   
                 </div>
             </div>
 
