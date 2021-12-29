@@ -1,9 +1,9 @@
 <?php 
-// blank--title-subtitle
 // available fields
 [
 'title'           => $title,
 'subtitle'        => $subtitle,
+'image'           => $image,
 'some_class'      => $some_class,
 'some_id'         => $some_id,
 'inner'           => $inner,
@@ -18,16 +18,15 @@
 ?>
 
 
-<section class="benefits block">    
-    <div class="container">
-        <h2 class="block-title text-center"><?php echo $title; ?></h2>
-        <h3 class="block-subtitle text-center"><?php echo $subtitle; ?></h3>
-        <div class="row py-5">
-            <?php echo $inner; ?>
-            <!-- use benefits-inner template -->
+
+<div class="col-lg-4 col-md-6 mb-5">
+    <div class="block-card d-flex flex-column justify-content-center p-5">
+        <div class="block-card-icon mb-5 text-center">
+            <img src="<?php echo wp_get_attachment_image_url( $image , 'full' ); ?>" alt="" class="block__image">
         </div>
+        <h4 class="block-card-title text-center"><?php echo $title; ?></h4>
     </div>
-</section>
+</div>
 
 
 
