@@ -27,15 +27,19 @@
         <div class="row">
            
             <div class="col-12 col-md-6 order-2 order-md-1">
-                <div class="section-header block__header">
+                
+                <div class="section-header block__header pb-4">
                     <h1 class="section-header__header"><?php echo $title; ?></h1>
                     <p class="section-header__text"><?php echo $subtitle; ?></p>
-                </div>                
-               
-                <div class="block__inner">
-                    <?php echo $inner; ?>
-                </div>
-                <a href="<?php echo $button_link; ?>" class="btn btn-primary block__button"><?php echo $button_text; ?></a>
+                </div> 
+                
+                <div class="block__content-wrap">
+                    <div class="block__inner mb-4">
+                        <?php echo $inner; ?>
+                    </div>
+                    <a href="<?php echo $button_link; ?>" class="btn btn-primary block__button"><?php echo $button_text; ?></a>
+                </div>               
+                
             </div>
 
             <div class="col-12 col-md-6 order-1 order-md-2 mb-5 mb-md-0">
