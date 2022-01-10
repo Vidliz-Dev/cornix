@@ -1,0 +1,151 @@
+//absolute utility classes here
+
+
+//text
+.text-gray {
+	color: $gray;
+}
+
+.text-white {
+	color: $white;
+}
+
+.text-green {
+    color:$green;
+}
+
+.lh-1 {
+    line-height: 1;
+}
+
+
+//backgrounds
+.bg-primary {
+    background:$gradient-primary;
+}
+.bg-dark {
+    background-color:$dark;
+}
+.bg-dark-1 {
+    background-color:$dark-1;
+}
+.bg-dark-2 {
+    background-color:$dark-2;
+}
+.bg-gradient-dark {
+    background:$gradient-dark;
+}
+
+.gradient{    
+    width: 50vw;
+    height: 50vw;
+    position: absolute;
+    background: radial-gradient(#92baf64f 0%, #92baf621 30%, transparent 60%);
+    border-radius:50%;
+    opacity: 0.5;
+    &-lg{
+        width: 70vw;
+        height: 70vw;
+        position: absolute;
+        background: radial-gradient(#92baf64f 0%, #92baf621 30%, transparent 60%);
+        border-radius:50%;
+        opacity: 0.5;
+    }
+    &-sm{
+        width: 30vw;
+        height: 30vw;
+        position: absolute;
+        background: radial-gradient(#92baf64f 0%, #92baf621 30%, transparent 60%);
+        border-radius:50%;
+        opacity: 0.5;
+    }
+    &-left {
+        left: 0; 
+        top:0;       
+    }
+    &-right {
+        right: 0;
+        top:0;        
+    }
+    &-top-right {
+        right: -20%;
+        top:-70%;        
+    }
+    &-bottom-right {
+        right: -20%;
+        bottom:-70%;        
+    }
+}
+
+
+.bg-grid {
+    position: relative;
+    &::before{
+        content:'';
+        position: absolute;
+        top: 0; bottom:0; left: 0; right: 0;
+        background-size: 180px 180px;
+        background-image:
+          linear-gradient(to right, #33375c36 3px, transparent 3px),
+          linear-gradient(to bottom,  #33375c36 3px, transparent 3px);
+
+        mask-image: linear-gradient(transparent, #000, transparent);
+    }
+}
+
+
+.clip{
+    &-bottom {
+        padding-bottom: 16rem;        
+        > .bg {
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%); 
+        }        
+    }
+    &-top {
+        padding-top: 16rem;         
+        > .bg {
+            clip-path: polygon(0% 15%, 100% 0, 100% 100%, 0% 100%);
+        }         
+    }
+}
+
+
+//shadows
+.box-shadow {
+    box-shadow: 8px 20px 40px 0px #00000040;
+}
+svg.shadow {
+    -webkit-filter: drop-shadow( 6px 16px 30px #00000040 );
+    filter: drop-shadow( 6px 16px 30px #00000040 );
+}
+
+
+
+
+//spacers
+.mb-section {
+	margin-bottom: $section-margin-bottom;	
+}
+
+.mt-section {
+	margin-top: $section-margin-bottom;	
+}
+
+
+
+//other
+.rounded {
+	border-radius: $border-radius;
+	overflow: hidden;
+}
+.rounded-sm {
+    border-radius: $btn-border-radius;
+    overflow: hidden;
+}
+
+.border {
+	border: 1px solid $border-color;
+}
+.border-primary {
+    border: 4px solid $primary;
+}

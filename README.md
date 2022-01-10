@@ -17,7 +17,6 @@ Requirements: PHP 7.1+
   - [Registering scripts](#registering-javascript-files)
 - [Theme css](#theme-css)
   - [File structure](#styles-file-structure)
-  - [Dark and Light modes](#dark-and-light-modes)
   - [General rules](#general-rules)
 
 ## File structure
@@ -29,6 +28,7 @@ theme folder/
     blocks/             - registered gutengerg block files (.php, css, scss, js)
     configure/          - files to include in functions.php
     css/                - theme .css files
+    fonts/              - theme fonts
     img/                - theme images
     js/                 - theme .js files
     scss/               - theme sourse scss files
@@ -47,19 +47,11 @@ Currently, the following option pages are available from the admin panel.
 - company social profiles
 - global tracking code snippets
 
-**Banner setting** 
-- all global banner settings.
-
-**Widget setting** 
-- data to show in Tradingview widgets.
-
 **Edit Page** screen
 - general settings (breadcrumbs, widget in header, color theme restrictions)
 - page jsavascript (additional .js file to load on this page, inline javascript)
 - page css (additional .css file to load on this page, inline css)
 
-**Edit Post** screen
-- marketing (campaign id, affiliate id, and post views). All fields are disabled, they are used to show info passed to CRM
 
 ---
 ## Custom blocks
@@ -72,9 +64,7 @@ Gutenberg block editor [handbook](https://developer.wordpress.org/block-editor/)
 
 **Block categories** available from Edit Page (or Edit Post) screen:
 - *Cornix* - general theme blocks, that may be used again later
-- *Cornix Banners* - reusable banners, usually configured from theme admin panel options page
-- *Cornix Widgets* - reusable widgets, usually configured from theme admin panel options page
-- *Cornix Blank* - template loaders, used for creating pages.
+- *Blank* - template loaders, used for creating pages.
 
 **All blocks should be added to their respectful category!*
 
@@ -183,49 +173,19 @@ There 2 main styling sourses:
 
 **Very important links**
 - [_variables.scss](scss/_variables.scss) - all project variables should be stored here
-- [_variables-blog.scss](scss/blog-scss/_variables-blog.scss) - variables that will *OVERWRITE* default theme values for blog pages only
 - [_bootstrap-theme.scss](scss/theme-scss/_bootstrap-theme.scss) - bootsrap components included in main theme
-- [_bootstrap-theme-blog.scs](scss/blog-scss/_bootstrap-theme-blog.scss) - bootsrap components included in blog
 
 **Main theme**
 ```
 theme-scss/
-    _blocks           - global block styles. Should be used for modifying default Gutenberg styles for inner blocks (included in blog.scss)
     _bootstrap-theme  - bootsrap components included in main theme
-    _elements         - all small elements should go here (included in blog.scss)
+    _bootstrap-extend - additional styles for default bootstrap elements
+    _utility-classes  - absolute utility classes
     _footer           - global styles for footer (included in blog.scss)
     _nav              - global styles for navbar (included in blog.scss)
-    _theme-dark       - dark theme classes (included in blog.scss)
-    _theme-light      - light theme classes (included in blog.scss)
     _theme            - global theme rules and utility classes (included in blog.scss)
 theme.scss            - main styling file, only @import's here
 ```
-
-**Blog theme**
-```
-blog-scss/
-    _article              - styles for single post pages
-    _blog-general         - global styles for all blog pages
-    _bootstrap-theme-blog - bootsrap components included in blog
-    _category-page        - styles for all category pages
-    _variables-blog       - variables that will OVERWRITE default theme values for blog pages only
-blog.scss                 - main styling file for blog, only @import's here
-```
-
-### Dark and Light modes
-The theme is designed to have a theme switcher between *dark* and *light* modes. <br>
-The mode is defined by one of two `<body>` classes: `theme-dark` and `theme-light`.
-
-Since the only difference between them is `color` and `background-color` for some of the elements, those two properties ***should never*** be defined strict.
-Please use absolute utility classes `class-name--dark` and `class-name--light` for that.
-
-**Example:**
-```
-<p class="text-blue--light">Some content</p>
-
-// will have default color in dark mode (white) and blue color in light mode
-```
-All mode-specific color classes are located in [_theme-dark.scss](scss/theme-scss/_theme-dark.scss) and [_theme-light.scss](scss/theme-scss/_theme-light.scss) files.
 
 ---
 ### General rules

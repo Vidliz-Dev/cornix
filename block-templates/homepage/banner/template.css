@@ -1,0 +1,54 @@
+.banner .container {
+  overflow: unset;
+}
+
+.banner__image-wrap {
+  position: relative;
+}
+
+.banner__image-wrap::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 2rem;
+  right: 0;
+  background-size: 120px 120px;
+  background-image: -o-linear-gradient(left, #ffffff36 3px, transparent 3px), -o-linear-gradient(top, #ffffff36 3px, transparent 3px);
+  background-image: linear-gradient(to right, #ffffff36 3px, transparent 3px), linear-gradient(to bottom, #ffffff36 3px, transparent 3px);
+  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(#000), to(transparent));
+  -webkit-mask-image: linear-gradient(transparent, #000, transparent);
+  mask-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(#000), to(transparent));
+  mask-image: linear-gradient(transparent, #000, transparent);
+  -webkit-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  transform: rotate(10deg);
+}
+
+.banner__image {
+  position: absolute;
+  top: -50px;
+  bottom: -50px;
+  right: 0;
+  left: -80px;
+  display: block;
+}
+
+.banner__image svg {
+  width: 100%;
+}
+
+.banner__content {
+  padding-top: 4.375rem;
+  padding-bottom: 4.375rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}

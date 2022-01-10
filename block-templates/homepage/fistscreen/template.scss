@@ -1,0 +1,38 @@
+@import '../../../scss/_variables';
+@import '../../../vendor/bootstrap/scss/mixins/breakpoints';
+
+
+.homepage-firstscreen {   
+
+    .section-title {
+        font-size: 3.125rem;
+        @include media-breakpoint-down(md){
+            font-size: 2.5rem;
+        }
+    } 
+
+    .block__image-col {        
+        @include media-breakpoint-up(lg){
+            padding-left: 6rem;
+        }
+        @include media-breakpoint-down(md){
+            padding: 5rem;
+        }        
+    }
+    .block__image-wrap {
+        position: relative;
+        &:before {
+            display: block;
+            content: "";
+            width: 100%;
+            padding-top: (262 / 189) * 100%;
+          }
+       img {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+       }
+    }
+}

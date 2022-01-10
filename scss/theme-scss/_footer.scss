@@ -1,0 +1,38 @@
+.footer {
+	
+	.nav-link {
+		color:$white;
+	}
+	
+
+	&__copyright {
+		font-size: 1rem;		
+		font-weight: 400;
+	}	
+
+	.social-link {
+		margin-right: 2rem;
+		color: $white;
+		font-size: 120%;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	&-links {
+		display: flex;
+		align-items: center;
+		margin-left: auto;
+    	width: fit-content;
+		@include media-breakpoint-down(sm){
+			margin-left: 0;
+			width: auto;
+		}
+	}
+	&-link {
+		font-size: 1rem;
+	}
+
+	
+}

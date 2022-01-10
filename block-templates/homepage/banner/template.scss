@@ -1,0 +1,45 @@
+@import '../../../scss/_variables';
+@import '../../../vendor/bootstrap/scss/mixins/breakpoints';
+
+.banner {  
+
+    .container{
+        overflow: unset;
+    } 
+
+    &__image-wrap{
+        position: relative;
+        &::before{
+            content:'';
+            position: absolute;
+            top: 0; bottom:0; left: 2rem; right: 0;
+            background-size: 120px 120px;
+            background-image:
+              linear-gradient(to right, #ffffff36 3px, transparent 3px),
+              linear-gradient(to bottom,  #ffffff36 3px, transparent 3px);    
+            mask-image: linear-gradient(transparent, #000, transparent);
+            transform: rotate(10deg);
+        }
+    }
+
+    &__image{
+        position: absolute;
+        top: -50px;
+        bottom:-50px;
+        right: 0;
+        left: -80px;
+        display: block;
+        
+        svg {
+            width:100%;
+        }      
+    }
+
+    &__content{
+        padding-top: 4.375rem;
+        padding-bottom: 4.375rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }    
+}
