@@ -4886,12 +4886,12 @@ section > .bg {
 }
 
 .gradient-left {
-  left: 0;
+  left: 5%;
   top: 0;
 }
 
 .gradient-right {
-  right: 0;
+  right: 5%;
   top: 0;
 }
 
@@ -9298,6 +9298,31 @@ svg.shadow {
     -ms-flex: 0 0 3rem;
     flex: 0 0 3rem;
   }
+
+  .gradient {
+    width: 60vw;
+    height: 60vw;
+  }
+
+  .gradient-lg {
+    width: 75vw;
+    height: 75vw;
+  }
+
+  .gradient-sm {
+    width: 45vw;
+    height: 45vw;
+  }
+
+  .gradient-top-right {
+    top: 0%;
+    bottom: -30%;
+  }
+
+  .gradient-bottom-right {
+    right: 0%;
+    bottom: -30%;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -9323,6 +9348,24 @@ svg.shadow {
   .footer-links {
     margin-left: 0;
     width: auto;
+  }
+
+  .clip-bottom {
+    padding-bottom: 5rem;
+  }
+
+  .clip-bottom > .bg {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
+  }
+
+  .clip-top {
+    padding-top: 5rem;
+  }
+
+  .clip-top > .bg {
+    -webkit-clip-path: polygon(0% 5%, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0% 5%, 100% 0, 100% 100%, 0% 100%);
   }
 }
 
@@ -9371,6 +9414,24 @@ svg.shadow {
 
   header {
     padding-top: 49px;
+  }
+
+  .clip-bottom {
+    padding-bottom: 10rem;
+  }
+
+  .clip-bottom > .bg {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+  }
+
+  .clip-top {
+    padding-top: 10rem;
+  }
+
+  .clip-top > .bg {
+    -webkit-clip-path: polygon(0% 10%, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0% 10%, 100% 0, 100% 100%, 0% 100%);
   }
 }
 

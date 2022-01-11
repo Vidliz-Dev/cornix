@@ -43,6 +43,10 @@
     background: radial-gradient(#92baf64f 0%, #92baf621 30%, transparent 60%);
     border-radius:50%;
     opacity: 0.5;
+    @include media-breakpoint-down(md){
+        width: 60vw;
+        height: 60vw;
+    }
     &-lg{
         width: 70vw;
         height: 70vw;
@@ -50,6 +54,10 @@
         background: radial-gradient(#92baf64f 0%, #92baf621 30%, transparent 60%);
         border-radius:50%;
         opacity: 0.5;
+        @include media-breakpoint-down(md){
+            width: 75vw;
+            height: 75vw;
+        }
     }
     &-sm{
         width: 30vw;
@@ -58,22 +66,34 @@
         background: radial-gradient(#92baf64f 0%, #92baf621 30%, transparent 60%);
         border-radius:50%;
         opacity: 0.5;
+        @include media-breakpoint-down(md){
+            width: 45vw;
+            height: 45vw;
+        }
     }
     &-left {
-        left: 0; 
+        left: 5%; 
         top:0;       
     }
     &-right {
-        right: 0;
+        right: 5%;
         top:0;        
     }
     &-top-right {
         right: -20%;
-        top:-70%;        
+        top:-70%;   
+        @include media-breakpoint-down(md){
+            top: 0%;
+            bottom:-30%; 
+        }      
     }
     &-bottom-right {
         right: -20%;
-        bottom:-70%;        
+        bottom:-70%;     
+        @include media-breakpoint-down(md){
+            right: 0%;
+            bottom:-30%; 
+        }   
     }
 }
 
@@ -95,17 +115,47 @@
 
 
 .clip{
+
     &-bottom {
         padding-bottom: 16rem;        
         > .bg {
-            clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%); 
-        }        
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);             
+        }  
+        
+        @include media-breakpoint-only(md){
+            padding-bottom: 10rem; 
+            > .bg {
+                clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%); 
+            }            
+        }
+
+        @include media-breakpoint-down(sm){
+            padding-bottom: 5rem; 
+            > .bg {
+                clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);    
+            }            
+        }
     }
-    &-top {
+
+    &-top {        
         padding-top: 16rem;         
         > .bg {
-            clip-path: polygon(0% 15%, 100% 0, 100% 100%, 0% 100%);
-        }         
+            clip-path: polygon(0% 15%, 100% 0, 100% 100%, 0% 100%);           
+        }    
+        
+        @include media-breakpoint-only(md){
+            padding-top: 10rem; 
+            > .bg {
+                clip-path: polygon(0% 10%, 100% 0, 100% 100%, 0% 100%);
+            }            
+        }
+        
+        @include media-breakpoint-down(sm){
+            padding-top: 5rem; 
+            > .bg {
+                clip-path: polygon(0% 5%, 100% 0, 100% 100%, 0% 100%);   
+            }            
+        }
     }
 }
 
