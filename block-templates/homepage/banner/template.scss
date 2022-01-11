@@ -1,11 +1,11 @@
 @import '../../../scss/_variables';
 @import '../../../vendor/bootstrap/scss/mixins/breakpoints';
 
-.banner {  
+.banner {    
 
-    .container{
+    &__wrapper {
         overflow: unset;
-    } 
+    }
 
     &__image-wrap{
         position: relative;
