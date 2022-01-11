@@ -1,3 +1,7 @@
+.banner {
+  overflow: unset;
+}
+
 .banner__wrapper {
   overflow: unset;
 }
