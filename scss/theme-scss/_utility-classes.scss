@@ -73,18 +73,26 @@
     }
     &-left {
         left: 5%; 
-        top:0;       
+        top:0;  
+        @include media-breakpoint-down(md){
+            left: 0%;
+            transform: translateX(-45%);
+        }     
     }
     &-right {
         right: 5%;
-        top:0;        
+        top:0; 
+        @include media-breakpoint-down(md){
+            right: 0%;
+            transform: translateX(45%);
+        }
     }
     &-top-right {
         right: -20%;
         top:-70%;   
         @include media-breakpoint-down(md){
-            top: 0%;
-            bottom:-30%; 
+            right: 0%;
+            top:-30%; 
         }      
     }
     &-bottom-right {
@@ -110,6 +118,9 @@
           linear-gradient(to bottom,  #33375c36 3px, transparent 3px);
 
         mask-image: linear-gradient(transparent, #000, transparent);
+        @include media-breakpoint-down(md){
+            mask-image: linear-gradient(transparent 0%, #000 35%, #000 65%, transparent 100%);  
+        }
     }
 }
 
