@@ -4,8 +4,12 @@
 
 .homepage-firstscreen .block__image-wrap {
   position: relative;
-  width: 100%;
+}
+
+.homepage-firstscreen .block__image-wrap:before {
   display: block;
+  content: "";
+  width: 100%;
 }
 
 .homepage-firstscreen .block__image-wrap img {
@@ -29,5 +33,9 @@
 
   .homepage-firstscreen .block__image-col {
     padding: 5rem;
+  }
+
+  .homepage-firstscreen .block__image-wrap:before {
+    padding-top: 138.6243386243%;
   }
 }

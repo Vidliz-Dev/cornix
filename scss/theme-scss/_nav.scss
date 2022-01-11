@@ -5,76 +5,7 @@ header {
 	@include media-breakpoint-down(sm){ padding-top: 46px; }
 }
 
-#menu-primary {
-	width: 100%;
-	.menu-item.menu-item-has-children:last-child {
-		@include media-breakpoint-up(lg){ margin-left: auto; }
-		@include media-breakpoint-down(md){
-			 margin-top: 0.5rem; 
-			 padding-top: 0.5rem;
-			 border-top: 1px solid $border-color;
-			}
-	}
-	@include media-breakpoint-down(md) {
-		.dropdown-menu {
-			border:none;
-			background:none;			
-		}
-	}	
-}
 
-
-
-//dropdown on hover 
-@include media-breakpoint-up(lg) {
-	nav.navbar {
-		.dropdown > .dropdown-menu {		
-			margin: -0.125rem 0 0;
-		}
-		.dropdown:hover > .dropdown-menu {
-			display: block;		
-		}
-	}
-}
-	
-
-
-
-.navbar-nav .nav-link {
-	font-size: 1.125rem;	
-	
-	@include media-breakpoint-up(lg) {
-		position: relative;
-		&:before {
-			content:'';
-			position: absolute;
-			bottom:calc( $nav-link-padding-y - 5px );
-			left: $nav-link-padding-x;
-			width:0px;
-			height: 2px;
-			display:block;
-			background:$gradient-primary;
-			transition: width 0.3s ease-in-out;
-		}
-		&:hover {
-			&:before {
-				width:3.5rem;
-			}
-		}
-		&:active {
-			&:before {
-				width:3.5rem;
-			}
-		}
-	}
-
-	@include media-breakpoint-only(lg){
-		font-size: 1.05rem;
-		&::after{
-			vertical-align: 0.15em;
-		}
-	}
-}
 
 .navbar {	
     position: fixed;
@@ -117,8 +48,46 @@ header {
 	
 }
 
+//navbar links
+.navbar-nav .nav-link {
+	font-size: 1.125rem;	
+	
+	@include media-breakpoint-up(lg) {
+		position: relative;
+		&:before {
+			content:'';
+			position: absolute;
+			bottom:calc( $nav-link-padding-y - 5px );
+			left: $nav-link-padding-x;
+			width:0px;
+			height: 2px;
+			display:block;
+			background:$gradient-primary;
+			transition: width 0.3s ease-in-out;
+		}
+		&:hover {
+			&:before {
+				width:3.5rem;
+			}
+		}
+		&:active {
+			&:before {
+				width:3.5rem;
+			}
+		}
+	}
+
+	@include media-breakpoint-only(lg){
+		font-size: 1.05rem;
+		&::after{
+			vertical-align: 0.15em;
+		}
+	}
+}
 
 
+
+//order
 .navbar {
 	.container {
 		@include media-breakpoint-down(md) {
@@ -143,8 +112,35 @@ header {
 
 
 
+
+
+//dropdown on hover 
+@include media-breakpoint-up(lg) {
+	nav.navbar {
+		.dropdown > .dropdown-menu {		
+			margin: -0.125rem 0 0;
+		}
+		.dropdown:hover > .dropdown-menu {
+			display: block;		
+		}
+	}
+}
+
+//dropdown mobile
+#menu-primary {
+	width: 100%;	
+	@include media-breakpoint-down(md) {
+		.dropdown-menu {
+			border:none;
+			background:none;			
+		}
+	}	
+}	
+
+
+//admin fix
 .admin-bar {	
 	.navbar {	
-		top: 32px;
+		top: 34px;
 	}
 }

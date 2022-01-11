@@ -34,9 +34,11 @@
 
 //card
 .card {
+
   height: 100%;
   cursor: default;
   transition: background 0.15s ease-in-out;
+
   &-icon {
     flex:none;
     width: 4.375rem;
@@ -45,17 +47,20 @@
     box-shadow: 8px 15px 15px 0px #00000040; 
     display: flex;
     justify-content: center;
-    align-items: center;  
-    
+    align-items: center;      
     &-md{
       width: 3.125rem;
       height: 3.125rem;
     }
-
     svg {
       fill:$white;
     }
+  }
 
+  &-body {
+    @include media-breakpoint-only(lg){
+      padding: 1.5rem;
+    }
   }
 
   &-title{

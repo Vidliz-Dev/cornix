@@ -4511,7 +4511,6 @@ section > .bg {
 .section-title h2,
 .section-title .h1,
 .section-title .h2 {
-  font-size: 3.75rem;
   margin-bottom: 0;
 }
 
@@ -4645,14 +4644,6 @@ section > .bg {
   margin-bottom: 0;
 }
 
-#menu-primary {
-  width: 100%;
-}
-
-.navbar-nav .nav-link {
-  font-size: 1.125rem;
-}
-
 .navbar {
   position: fixed;
   left: 0;
@@ -4683,8 +4674,16 @@ section > .bg {
   gap: 25px;
 }
 
+.navbar-nav .nav-link {
+  font-size: 1.125rem;
+}
+
+#menu-primary {
+  width: 100%;
+}
+
 .admin-bar .navbar {
-  top: 32px;
+  top: 34px;
 }
 
 .footer .nav-link {
@@ -8113,18 +8112,6 @@ svg.shadow {
     text-align: center !important;
   }
 
-  #menu-primary .menu-item.menu-item-has-children:last-child {
-    margin-left: auto;
-  }
-
-  nav.navbar .dropdown > .dropdown-menu {
-    margin: -0.125rem 0 0;
-  }
-
-  nav.navbar .dropdown:hover > .dropdown-menu {
-    display: block;
-  }
-
   .navbar-nav .nav-link {
     position: relative;
   }
@@ -8151,6 +8138,14 @@ svg.shadow {
 
   .navbar-nav .nav-link:active:before {
     width: 3.5rem;
+  }
+
+  nav.navbar .dropdown > .dropdown-menu {
+    margin: -0.125rem 0 0;
+  }
+
+  nav.navbar .dropdown:hover > .dropdown-menu {
+    display: block;
   }
 
   .nav-search {
@@ -9225,17 +9220,6 @@ svg.shadow {
     padding-left: 0;
   }
 
-  #menu-primary .menu-item.menu-item-has-children:last-child {
-    margin-top: 0.5rem;
-    padding-top: 0.5rem;
-    border-top: 1px solid #ffffff33;
-  }
-
-  #menu-primary .dropdown-menu {
-    border: none;
-    background: none;
-  }
-
   .navbar .navbar-utility-menu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -9275,6 +9259,11 @@ svg.shadow {
     -webkit-box-ordinal-group: 5;
     -ms-flex-order: 4;
     order: 4;
+  }
+
+  #menu-primary .dropdown-menu {
+    border: none;
+    background: none;
   }
 
   .nav-search-wrapper {
@@ -9354,6 +9343,10 @@ svg.shadow {
 }
 
 @media (min-width: 1040px) and (max-width: 1399.98px) {
+  .card-body {
+    padding: 1.5rem;
+  }
+
   html {
     font-size: 14px;
   }
@@ -9384,6 +9377,13 @@ svg.shadow {
 @media (min-width: 576px) and (max-width: 767.98px) {
   html {
     font-size: 13px;
+  }
+}
+
+@media (min-width: 1040px) and (max-width: 1039.98px) {
+  h2,
+  .h2 {
+    font-size: 3.5rem;
   }
 }
 
