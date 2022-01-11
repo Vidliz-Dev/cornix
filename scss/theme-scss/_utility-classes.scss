@@ -141,7 +141,7 @@
         }
 
         @include media-breakpoint-down(sm){
-            padding-bottom: 5rem; 
+            padding-bottom: 10rem; 
             > .bg {
                 clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);    
             }            
@@ -162,7 +162,7 @@
         }
         
         @include media-breakpoint-down(sm){
-            padding-top: 5rem; 
+            padding-top: 10rem; 
             > .bg {
                 clip-path: polygon(0% 5%, 100% 0, 100% 100%, 0% 100%);   
             }            

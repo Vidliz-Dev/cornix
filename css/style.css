@@ -9372,7 +9372,7 @@ svg.shadow {
   }
 
   .clip-bottom {
-    padding-bottom: 5rem;
+    padding-bottom: 10rem;
   }
 
   .clip-bottom > .bg {
@@ -9381,7 +9381,7 @@ svg.shadow {
   }
 
   .clip-top {
-    padding-top: 5rem;
+    padding-top: 10rem;
   }
 
   .clip-top > .bg {
