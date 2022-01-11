@@ -4,13 +4,8 @@
 
 .homepage-firstscreen .block__image-wrap {
   position: relative;
-}
-
-.homepage-firstscreen .block__image-wrap:before {
-  display: block;
-  content: "";
   width: 100%;
-  padding-top: 138.6243386243%;
+  display: block;
 }
 
 .homepage-firstscreen .block__image-wrap img {
