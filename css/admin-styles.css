@@ -90,3 +90,12 @@ img {
   color: #6c757d;
   opacity: 0.65;
 }
+
+.acf-accordion .acf-accordion-title {
+  background: #1d2327;
+  color: white;
+}
+
+.acf-accordion .acf-accordion-title:hover {
+  background: #41474b;
+}

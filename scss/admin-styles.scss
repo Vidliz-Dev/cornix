@@ -69,7 +69,15 @@ img {
         opacity: 0.65;
     }
 }
-
+.acf-accordion {
+    .acf-accordion-title {
+        background: #1d2327;
+        color: white;
+        &:hover {
+            background: #41474b;
+        }
+    }    
+}
 
 
 // // some tests

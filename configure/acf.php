@@ -87,3 +87,12 @@ function crnx_get_author_avatar ( $auth_id ) {
     } 
     return $auth_img;      
 }
+
+// remove the Tags box
+add_action( 'admin_head', 'crnx_remove_tags_meta_box' );
+function crnx_remove_tags_meta_box() {
+    remove_meta_box( 'tagsdiv-exchange', 'channels', 'side' );
+    remove_meta_box( 'tagsdiv-spot', 'channels', 'side' );
+    remove_meta_box( 'tagsdiv-signals', 'channels', 'side' );
+   
+}

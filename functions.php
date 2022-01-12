@@ -7,7 +7,7 @@ include( 'configure/configure.php' );
 include( 'configure/acf.php' );
 
 // taxonomies
-// include( 'configure/taxonomies.php' );
+include( 'configure/taxonomies.php' );
 
 // SHORTCODES
 // include( 'configure/shortcodes.php' );
