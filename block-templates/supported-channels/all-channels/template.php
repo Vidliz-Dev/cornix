@@ -17,10 +17,10 @@
 
 
 
-<section class="all-channels block pt-50">    
+<section class="all-channels block pt-40">    
     <div class="container">
 
-        <div class="row mb-10">
+        <div class="row mb-25">
             <div class="col-12">
                 <ul class="nav">
                     <li class="nav-item dropdown">
@@ -61,10 +61,10 @@
             ) );
             while ( $query->have_posts() ) : $query->the_post();
             ?>
-                <div class="col-12 col-sm-6 col-lg-4 col-xl-3" data-exchange="" data-spot="" data-signal="">
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-25" data-exchange="" data-spot="" data-signal="">
                     <div class="card channel py-40 px-40 text-center" onclick="window.location.href='<?php the_field('link'); ?>'">
-                        <img class="channel__logo mb-40" src="<?php the_field('logo'); ?>" alt="<?php the_title(); ?>">
-                        <h3 class="channel__title card-title mb-0"><?php the_title(); ?></h3>
+                        <img class="channel-logo mb-40" src="<?php the_field('logo'); ?>" alt="<?php the_title(); ?>" style="width: 120px; height:120px;">
+                        <h3 class="card-title mb-0"><?php the_title(); ?></h3>
                     </div>
                 </div>   
             <?php
