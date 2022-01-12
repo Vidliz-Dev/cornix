@@ -20,7 +20,7 @@
 <section class="all-channels block pt-50">    
     <div class="container">
 
-        <div class="row">
+        <div class="row mb-10">
             <div class="col-12">
                 <ul class="nav">
                     <li class="nav-item dropdown">
@@ -62,8 +62,8 @@
             ?>
                 <div class="col-12 col-sm-6 col-lg-4 col-xl-3" data-exchange="" data-spot="" data-signal="">
                     <div class="card channel py-40 px-40 text-center" onclick="window.location.href='<?php the_field('link'); ?>'">
-                        <img class="channel__logo mb-40" src="<?php the_field('logo'); ?>" alt="<?php the_title; ?>">
-                        <h3 class="channel__title"><?php the_title; ?></h3>
+                        <img class="channel__logo mb-40" src="<?php the_field('logo'); ?>" alt="<?php the_title(); ?>">
+                        <h3 class="channel__title"><?php the_title(); ?></h3>
                     </div>
                 </div>   
             <?php

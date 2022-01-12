@@ -29,9 +29,9 @@
                 <p class="mb-40 pb-10" data-aos="fade-in">
                     <?php echo $subtitle; ?>
                 </p>
-                <p class="font-weight-bold">
+                <div class="text-white font-weight-bold">
                     <?php echo $inner; ?>
-                </p>
+                </div>
             </div>
         </div>
     </div>
