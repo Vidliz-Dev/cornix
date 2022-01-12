@@ -51,7 +51,7 @@
                 </ul>
             </div>
         </div>
-        
+
 
         <div class="row">
             <?php
@@ -64,7 +64,7 @@
                 <div class="col-12 col-sm-6 col-lg-4 col-xl-3" data-exchange="" data-spot="" data-signal="">
                     <div class="card channel py-40 px-40 text-center" onclick="window.location.href='<?php the_field('link'); ?>'">
                         <img class="channel__logo mb-40" src="<?php the_field('logo'); ?>" alt="<?php the_title(); ?>">
-                        <h3 class="channel__title"><?php the_title(); ?></h3>
+                        <h3 class="channel__title card-title mb-0"><?php the_title(); ?></h3>
                     </div>
                 </div>   
             <?php
