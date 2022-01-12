@@ -12,12 +12,6 @@
 ] = $args;
 ?>
 
-<?php 
-// wp_enqueue_script("script-id");  // load previously registered script
-// wp_enqueue_style('style-id'); // load some other registered styles
-?>
-
-
 
 <section class="channels-firstscreen block pb-0">    
     <div class="container">
